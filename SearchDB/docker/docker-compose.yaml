@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    container_name: MainDB
+    image: postgres:12.3
+    ports:
+      - "6432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=search_db
